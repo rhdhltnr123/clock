@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Ds-digital";
+  src: url("./font/DS-DIGIB.TTF");
+}
+@font-face {
+  font-family: "LAB디지털";
+  src: url("./font/LAB디지털.ttf");
+}
+
+body {
+  font-family: "Ds-digital";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d6d4d8;
+  background-image: url(./images/sun.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+body.asdf {
+  background-image: url(./images/moon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+
+#clock {
+  background: #333;
+  width: 600px;
+  font-size: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-box {
+  background: #feba29;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  transition: background 2s;
+}
+
+.container span {
+  font-size: 40px;
+}
+
+.wek span {
+  font-size: 30px;
+  color: rgb(136, 125, 125);
+}
+
+.container,
+.wek,
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+span {
+  margin: 0 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.btn button {
+  font-size: 24px;
+  border: none;
+  background: none;
+}
+
+.clock-box.black {
+  background: #083a53;
+  color: white;
+  transition: background 2s;
+}
+.white.btn1 {
+  color: white;
+}
+.box,
+.font {
+  font-family: "LAB디지털";
+}
+@media (max-width: 630px) {
+  span {
+    font-size: 30px;
+  }
+  .wek .box {
+    font-size: 13px;
+    margin: 0 5px;
+  }
+  .btn {
+    top: -15px;
+  }
+  #clock {
+    width: 300px;
+  }
+  .container span {
+    font-size: 15px;
+  }
+  .container span:nth-child(2n) {
+    font-size: 15px;
+    margin: 0 -5px;
+  }
+  .contents span {
+    margin: 0 3px;
+  }
+}
