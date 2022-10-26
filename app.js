@@ -84,9 +84,17 @@ setInterval(function () {
 
 let bg = document.querySelector(".clock-box");
 let btn = document.querySelector(".btn1");
+let btn2 = document.querySelector(".btn2");
 let body = document.querySelector("#body");
 btn.addEventListener("click", () => {
   bg.classList.toggle("black");
   btn.classList.toggle("white");
   body.classList.toggle("asdf");
+  btn2.classList.toggle("qwe");
+});
+btn2.addEventListener("click", () => {
+  bg.classList.toggle("black");
+  btn.classList.toggle("white");
+  body.classList.toggle("asdf");
+  btn2.classList.toggle("qwe");
 });
